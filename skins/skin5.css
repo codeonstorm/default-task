@@ -1,0 +1,8 @@
+
+.vjs-big-play-button {
+  width: 0!important;
+  height: 0!important;
+  border-top: 50px solid transparent!important;
+  border-left: 100px solid #458a1c!important;
+  border-bottom: 50px solid transparent!important;
+}

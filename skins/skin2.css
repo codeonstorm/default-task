@@ -1,0 +1,16 @@
+.vjs-big-play-button{
+  border: 3px solid green!important;
+  width: 47px!important;
+  height: 47px!important;
+  border-radius: 50%!important;
+}
+
+
+.vjs-play-progress {
+  background: #458a1c!important;
+}
+
+
+.video-js .vjs-play-progress:before{
+  display: none;
+}
