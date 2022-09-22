@@ -1,0 +1,15 @@
+.video-js{
+  width: 100%!important;
+   height: 100vh;
+}
+
+.vjs-big-play-button{
+  background: #243e1b!important;
+  border: none!important;
+  width: 60px!important;
+}
+
+
+.vjs-control-bar{
+  background: #4fa83d!important;
+}

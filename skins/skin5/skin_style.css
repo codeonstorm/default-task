@@ -1,3 +1,7 @@
+.video-js{
+  width: 100%!important;
+   height: 100vh;
+}
 
 .vjs-big-play-button {
   width: 0!important;
@@ -5,4 +9,8 @@
   border-top: 50px solid transparent!important;
   border-left: 100px solid #458a1c!important;
   border-bottom: 50px solid transparent!important;
+
+  /* border: 0.06666em transparent!important; */
+  /* background-color: none!important;
+  background-color: rgba(43, 51, 63, 0.7); */
 }
