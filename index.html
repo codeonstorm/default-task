@@ -17,29 +17,11 @@
     <body>
       <div class="container">
 
-
-      <video
-        id="my-video"
-        class="video-js vjs-big-play-centered"
-        controls
-        preload="auto"
-        width="640"
-        height="264"
-        poster="MY_VIDEO_POSTER.jpg"
-      >      <!--poster="https://push-2501.5centscdn.com/startsplash.jpg"  -->
-
-        <source src="https://push-2501.5centscdn.com/TearsofSteel.mp4" type="video/mp4" />
-        <!-- <source src="MY_VIDEO.webm" type="video/webm" /> -->
-        <p class="vjs-no-js">
-          To view this video please enable JavaScript, and consider upgrading to a
-          web browser that
-          <a href="https://videojs.com/html5-video-support/" target="_blank"
-            >supports HTML5 video</a>
-        </p>
-      </video>
+      <iframe id="videoFrame" src="skins\default\index.html" width="600px" height="250px" title="skin"></iframe>
 
 
-<br><br>
+
+    <br><br>
 
       <div class="row">
           <div class="col-lg-3 col-6 p-4">
@@ -79,6 +61,7 @@
           </div>
           <!-- ./col -->
       </div>
+
 
   </div>
       <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>

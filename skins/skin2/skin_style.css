@@ -1,3 +1,9 @@
+.video-js{
+  width: 100%!important;
+   height: 100vh;
+}
+
+
 .vjs-big-play-button{
   border: 3px solid green!important;
   width: 47px!important;
@@ -14,3 +20,10 @@
 .video-js .vjs-play-progress:before{
   display: none;
 }
+
+/**********/
+ /* .vjs-control{
+  position: absolute!important;
+  top: -22px!important;
+  width: 100%!important;
+} */

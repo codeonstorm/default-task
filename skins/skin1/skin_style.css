@@ -1,3 +1,8 @@
+.video-js{
+  width: 100%!important;
+   height: 100vh;
+}
+
 .vjs-big-play-button{
   background: green!important;
   border: 0!important;
