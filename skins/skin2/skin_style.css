@@ -3,15 +3,28 @@
    height: 100vh;
 }
 
-
+/*
 .vjs-big-play-button{
   border: 3px solid green!important;
   width: 47px!important;
   height: 47px!important;
   border-radius: 50%!important;
+} */
+
+.vjs-big-play-button {
+    height: 0px !important;
+    width: 0px !important;
+    border: 0 !important;
+    background: none !important;
 }
 
-
+.vjs-big-play-button .vjs-icon-placeholder:before {
+    content: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQzIiBoZWlnaHQ9IjE0MyIgdmlld0JveD0iMCAwIDE0MyAxNDMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+DQo8cGF0aCBkPSJNNzUuOTY3NCAwQzc4LjYzMTkgMC4zNjMwOTcgODEuMzA3NSAwLjY2NzU0IDgzLjk2MDcgMS4xMDA0NkMxMTEuODkgNS42NzU0OCAxMzUuNDg1IDI4LjIyMzggMTQxLjI5OSA1NS45MjUyQzE0NS40MjcgNzUuNTk1OCAxNDIuMDQgOTMuODg4NCAxMzEuMTM5IDExMC44MDNDMTI5Ljc3MyAxMTIuOTI2IDEyNy44NjUgMTEzLjk1NCAxMjUuMzQ5IDExMy41OTZDMTIzLjA0OCAxMTMuMjY5IDEyMS4zMSAxMTEuNTUyIDEyMC43ODUgMTA5LjI1M0MxMjAuMzggMTA3LjQ5MyAxMjAuOTM2IDEwNS45NjggMTIxLjkwMyAxMDQuNTA1QzEyNS43NjcgOTguNjI2IDEyOC41NzggOTIuMTE4NiAxMzAuMjA5IDg1LjI3NDZDMTM1LjgxMSA2MS45Mzg3IDEyNi42MTQgMzYuOTk0IDEwNy4xODQgMjIuODgwN0M5NS42OTE5IDE0LjUzNjkgODIuODU2NiAxMC42NTQ2IDY4LjY3NzkgMTEuMjMzNkM0MC45OTczIDEyLjM1MDkgMTcuMjg4MiAzMy4wMzM0IDEyLjIyNDYgNjAuNDE2NUM2LjY1ODMyIDkwLjUyNTYgMjQuMjk4NCAxMTkuOTg5IDUzLjUxNTEgMTI5LjAzOUM3MC4zODE2IDEzNC4yNjUgODYuNTk0NSAxMzIuMjg3IDEwMS45NTggMTIzLjU2N0MxMDMuNDU4IDEyMi43MjkgMTA0Ljk1IDEyMi4wNTkgMTA2LjcwNiAxMjIuNDVDMTA3LjgwOCAxMjIuNjc4IDEwOC44MTYgMTIzLjIzMiAxMDkuNTk5IDEyNC4wMzlDMTEwLjM4MyAxMjQuODQ2IDExMC45MDcgMTI1Ljg3IDExMS4xMDIgMTI2Ljk3OEMxMTEuNDkzIDEyOS4yNjggMTEwLjQ2NiAxMzEuNDgzIDEwOC4zMzUgMTMyLjc3NkMxMDIuNTI4IDEzNi4zMDkgOTYuMjMzNCAxMzguOTY3IDg5LjY1MjcgMTQwLjY2NkM1MS43MzMyIDE1MC40NjcgMTMuMzUzIDEyOC41NDUgMi43MDkxNCA5MC44ODU5QzEuNDY2MjkgODYuNDg0IDEuMDUwMTQgODEuODUwMyAwLjI1MTM3IDc3LjMyNTZDMC4xNzMxNjggNzYuODczMSAwLjA4Mzc4NzYgNzYuNDIzNCAwIDc1Ljk3MVY2Ny4wMzMyQzAuMDgwOTk0NyA2Ni42MjgyIDAuMTc4NzQzIDY2LjIyNiAwLjI0MDE4NyA2NS44MTgyQzAuNzI4OTQ4IDYyLjUwODUgMS4wMzMzNyA1OS4xNjI0IDEuNzIwNDMgNTUuODk3M0M3LjU0MDg3IDI4LjE5NTggMzEuMTA0NyA1LjY5NTAzIDU5LjAzOTUgMS4xMDA0NkM2MS42OSAwLjY2NDc0NyA2NC4zNjU2IDAuMzYzMDk3IDY3LjAzMDEgMEg3NS45Njc0WiIgZmlsbD0iIzRGQTgzRCIvPg0KPHBhdGggZD0iTTQ3LjY2NjUgNzEuMzY4MkM0Ny42NjY1IDY2LjE4NDQgNDcuNjY2NSA2MS4wMDM1IDQ3LjY2NjUgNTUuODExNEM0Ny42OTQ1IDQ2LjI1MjMgNTcuMjk0NCA0MC43MTI5IDY1LjY1NjUgNDUuNDcxNkM3NC43MDkzIDUwLjYyNzYgODMuNzQxNyA1NS44MjA2IDkyLjc1MzQgNjEuMDUwN0MxMDEuNDM1IDY2LjA5IDEwMS40MzUgNzYuOTUyIDkyLjc1MzQgODEuOTcxOEM4My43NzkgODcuMTY2NyA3NC43ODY4IDkyLjMzMjkgNjUuNzc2OSA5Ny40NzAzQzU3LjI2MDggMTAyLjMyOSA0Ny42ODg5IDk2LjgwOTEgNDcuNjcyMSA4Ny4wNTI4QzQ3LjY2NjUgODEuODE5IDQ3LjY2NjUgNzYuNTk2NCA0Ny42NjY1IDcxLjM2ODJaTTU4Ljg2ODIgNzEuNDg0OUM1OC44NjgyIDc2LjU3NDIgNTguODY4MiA4MS42NjcyIDU4Ljg2ODIgODYuNzYzOUM1OC44NjgyIDg4LjMxNjggNTkuMTExOSA4OC40NjEyIDYwLjQzOTMgODcuNzAyOUM2OS4yNzE4IDgyLjYzOTUgNzguMTAyNSA3Ny41NzE1IDg2LjkzMTMgNzIuNDk4OEM4OC4zNTY4IDcxLjY2NTQgODguMzYyNCA3MS4zNzM3IDg2Ljk2NzggNzAuNTcwOUM3OC4xNDA4IDY1LjQ5NDYgNjkuMzExIDYwLjQyNDcgNjAuNDc4NSA1NS4zNjEzQzU5LjA3ODMgNTQuNTU4NSA1OC44NjgyIDU0LjY5NDYgNTguODY4MiA1Ni4zNjk3QzU4Ljg2ODIgNjEuNDA1MyA1OC44NjgyIDY2LjQ0MzcgNTguODY4MiA3MS40ODQ5WiIgZmlsbD0iIzRGQTgzRCIvPg0KPC9zdmc+DQo=') !important;
+    transform: scale(0.4);
+    left: 1rem;
+    top: -0.25rem;
+}
+/**** progress******/
 .vjs-play-progress {
   background: #458a1c!important;
 }
@@ -21,9 +34,44 @@
   display: none;
 }
 
-/**********/
- /* .vjs-control{
+
+ .vjs-progress-control{
   position: absolute!important;
   top: -22px!important;
   width: 100%!important;
-} */
+}
+
+/* volume */
+.vjs-volume-panel{
+  left: 62%;
+  width: 10em!important;
+  transition: width 0.1s!important;
+}
+
+.vjs-volume-level{
+  background: #4fa83d!important;
+}
+
+.vjs-volume-horizontal{
+  width: 5em!important;
+  height: 3em!important;
+  margin-right: 0!important;
+
+  visibility: visible!important;
+  opacity: 1!important;
+  position: relative!important;
+  transition: visibility 0.1s, opacity 0.1s, height 0.1s, width 0.1s, left 0s, top 0s!important;
+}
+
+/* picture controler */
+.vjs-picture-in-picture-control{
+  left: 53%;
+}
+
+.vjs-fullscreen-control{
+  left: 52%;
+}
+
+.vjs-remaining-time{
+  left: -18%;
+}

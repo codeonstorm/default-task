@@ -9,7 +9,90 @@
   width: 60px!important;
 }
 
-
+/* control bar */
 .vjs-control-bar{
   background: #4fa83d!important;
+  align-items: center;
+}
+
+/**** progress******/
+ .vjs-progress-control{
+  position: absolute!important;
+  top: -20px!important;
+  width: 100%!important;
+
+  /* margin: 0 10px; */
+}
+
+
+/* .vjs-load-progress>div:first-child{
+  background: #fff!important;
+} */
+
+.vjs-progress-holder{
+  height: 11px!important;
+}
+
+.vjs-slider-bar{
+  display: none!important;
+}
+
+
+/* vjs-play-control */
+.vjs-play-control{
+  background: #fff!important;
+  border-radius: 50%!important;
+  width: 20px!important;
+  height: 20px!important;
+  left: 5px;
+
+}
+
+.vjs-play-control>.vjs-icon-placeholder{
+  color: #4fa83d!important;
+  position: absolute;
+    top: -5px;
+    left: 1px;
+}
+
+/* picture controler */
+.vjs-picture-in-picture-control{
+  left: 50%;
+}
+
+.vjs-fullscreen-control{
+  left: 55%;
+}
+
+.vjs-remaining-time{
+  left: 20%;
+}
+
+
+
+/* volume */
+.vjs-volume-panel{
+  width: 10em!important;
+  transition: width 0.1s!important;
+}
+
+.vjs-volume-level{
+  background: red!important;
+}
+
+.vjs-volume-horizontal{
+  width: 5em!important;
+  height: 3em!important;
+  margin-right: 0!important;
+
+  visibility: visible!important;
+  opacity: 1!important;
+  position: relative!important;
+  transition: visibility 0.1s, opacity 0.1s, height 0.1s, width 0.1s, left 0s, top 0s!important;
+}
+
+/* custom volume */
+.vjs-icon-volume-high:before, .video-js .vjs-mute-control .vjs-icon-placeholder:before {
+  content: url('https://cp.5centscdn.net/player/5centscdn/skins/skin4/assets/volume-full.svg') !important;
+ transform: scale(0.5);
 }
