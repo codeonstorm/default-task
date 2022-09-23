@@ -7,3 +7,41 @@
   background: #243e1b!important;
   border: none!important;
 }
+
+
+/**** progress******/
+.vjs-play-progress {
+  background: #458a1c!important;
+}
+
+
+.video-js .vjs-play-progress:before{
+  display: none;
+}
+
+
+ .vjs-progress-control{
+  position: absolute!important;
+  top: -22px!important;
+  width: 100%!important;
+}
+
+
+
+
+
+
+
+/* picture controler */
+.vjs-picture-in-picture-control{
+  left: 70%;
+}
+
+.vjs-fullscreen-control{
+  display: none!important;
+}
+
+/*******/
+.vjs-remaining-time{
+  display: none;
+}
