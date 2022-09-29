@@ -10,6 +10,8 @@
       <!-- CSS only -->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
       <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
+      <link href="../../plugins/videojs.thumbnails.css" rel="stylesheet" />
+      <link href="vjs-social-share.css" rel="stylesheet" />
 
       <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
       <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
@@ -42,20 +44,60 @@
 
 
       <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
-      <script src="../custom_plugin/custom_plugin.js"></script>
+      <script src="vjs-social-share.js"></script>
+      <script src="vjs-cv-control.js"></script>
+      <script src="../../plugins/videojs.thumbnails.js"></script>
       <script type="text/javascript">
 
       var player = videojs('my-video', {
-
+        playbackRates: [0.25, 0.5, 1, 1.5, 2]
       });
 
-      //register custom custom_plugin
-      player.customButtonPlugin(player);
+      //socialSharePlugin register
+      player.socialSharePlugin(player);
+      //CV Plugin register
+      player.cvControlPlugin(player);
 
-      // player.on('timeupdate', function(){
-      //   console.log(document.querySelector('.vjs-current-time-display').innerHTML);
-      //     // alert(player.duration());
-      // });
+      // thumbnails
+      // here's an example of generating thumbnails from a sprited image:
+      player.thumbnails({
+        0: {
+          src: 'https://push-2501.5centscdn.com/startsplash.jpg',
+          style: {
+            left: '-60px',
+            width: '600px',
+            height: '68px',
+            clip: 'rect(0, 120px, 68px, 0)'
+          }
+        },
+        10: {
+          style: {
+            left: '-180px',
+            clip: 'rect(0, 240px, 68px, 120px)'
+          }
+        },
+        20: {
+          style: {
+            left: '-300px',
+            clip: 'rect(0, 360px, 68px, 240px)'
+          }
+        },
+        30: {
+          style: {
+            left: '-420px',
+            clip: 'rect(0, 480px, 68px, 360px)'
+          }
+        },
+        40: {
+          style: {
+            left: '-540px',
+            clip: 'rect(0, 600px, 68px, 480px)'
+          }
+        }
+      });
+
+
+
 
 
       </script>

@@ -4,8 +4,8 @@
 }
 
 .vjs-big-play-button{
-  background: green!important;
-  border: 0!important;
+  background: #458a1c!important;
+  border: 0.4px solid #ffffff!important;
   width: 47px!important;
   height: 47px!important;
   border-radius: 50%!important;
@@ -14,4 +14,8 @@
 /* progress */
 .vjs-play-progress {
   background: #458a1c!important;
+}
+
+.vjs-control-bar{
+  background-color: rgb(0 0 0)!important;
 }

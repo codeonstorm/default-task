@@ -1,0 +1,136 @@
+.vjs-modal-dialog-content {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.vjs-5centscdn-share {
+    background: rgba(0, 0, 0, 0.65);
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    position: relative;
+  }
+
+
+
+ .vjs-share-title {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 12px;
+      color: #FFFFFF;
+  }
+
+ .share-url-field {
+    background: rgba(255, 255, 255, 0.25);
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 3em;
+    width: 23em;
+    margin-bottom: 0.5em;
+    color: #ffffff;
+    padding: 7px;
+}
+
+ #share_url_copied_popup {
+    position: absolute;
+    top: 17px;
+    right: 8px;
+    background: black;
+    border-radius: 6px;
+    padding: 5px;
+    display: none;
+}
+
+
+.vjs-share-group-button {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+.share-button{
+  border-radius: 5px;
+  margin: -0.8em;
+  cursor: pointer;
+  width: 6em;
+  height: 6em;
+  transform: scale(0.6);
+}
+
+
+.share_clipboard_5centscdn{
+  background-color: #615b55;
+    top: -3em;
+    position: absolute;
+    right: 0em;
+    width: 4em;
+    height: 4em;
+}
+
+.vjs-copy-url-button .icon {
+    content: url('https://cp.5centscdn.net/player/5centscdn/skins/skin1/assets/copy.svg');
+}
+
+
+.vjs-share-group-button .vjs-facebook-share {
+    background-color: #3B5998;
+}
+
+.vjs-copy-url-button {
+    background-color: #615b55;
+    top: -3em;
+    position: absolute;
+    right: 0em;
+    width: 4em;
+    height: 4em;
+}
+
+.vjs-facebook-share .icon {
+    content: url('https://cp.5centscdn.net/player/5centscdn/skins/skin1/assets/facebook.svg');
+}
+
+.vjs-share-group-button .vjs-google-share {
+    background-color: #D34836;
+}
+.vjs-google-share .icon {
+    content: url('https://cp.5centscdn.net/player/5centscdn/skins/skin1/assets/google.svg');
+}
+
+
+
+.vjs-share-group-button .vjs-linkedin-share {
+   background-color: #2867B2;
+}
+
+.vjs-linkedin-share .icon {
+    content: url('https://cp.5centscdn.net/player/5centscdn/skins/skin1/assets/linkedin.svg');
+}
+
+
+.vjs-share-group-button .vjs-twitter-share {
+    background-color: #1DA1F2;
+}
+.vjs-twitter-share .icon {
+   content: url('https://cp.5centscdn.net/player/5centscdn/skins/skin1/assets/twitter.svg');
+}
+
+
+.vjs-share-group-button  .vjs-pinterest-share {
+    background-color: #E60023;
+}
+
+.vjs-pinterest-share .icon {
+    content: url('https://cp.5centscdn.net/player/5centscdn/skins/skin1/assets/pinterest.svg');
+}
+/* button */
+.vjs-facebook-share {
+    background-color: #3B5998;
+}

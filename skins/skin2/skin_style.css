@@ -43,7 +43,7 @@
 
 /* volume */
 .vjs-volume-panel{
-  left: 62%;
+  order: 2;
   width: 10em!important;
   transition: width 0.1s!important;
 }
@@ -65,13 +65,59 @@
 
 /* picture controler */
 .vjs-picture-in-picture-control{
-  left: 53%;
+  order: 3;
 }
 
 .vjs-fullscreen-control{
-  left: 52%;
+  order: 4;
+}
+.vjs-fullscreen-control .vjs-icon-placeholder::before {
+  content: url('https://cp.5centscdn.net/player/5centscdn/skins/skin2/assets/fullscreen.svg') !important;
+  transform: scale(0.4);
 }
 
 .vjs-remaining-time{
-  left: -18%;
+  flex: auto!important;
+  text-align: left!important;
+}
+
+
+.vjs-control-bar{
+  background-color: rgb(0 0 0)!important;
+}
+
+
+/* custom plugin */
+.vjs-custom-btn {
+  order: 6;
+}
+.vjs-custom-btn .vjs-icon-placeholder::before{
+  content: url('https://cp.5centscdn.net/player/5centscdn/skins/skin2/assets/settings.svg');
+  transform: scale(0.4);
+  cursor: pointer;
+}
+
+
+/* timer */
+.vjs-remaining-time{
+  display: none!important;
+}
+.vjs-current-time{
+  display: block!important;
+  padding-right: 0!important;
+}
+
+.vjs-time-divider{
+  display: block!important;
+}
+.vjs-current-time-display{
+  color: #4fa83d!important;
+}
+
+.vjs-duration{
+  display: block!important;
+  flex: auto!important;
+  text-align: left!important;
+  padding-left: 0!important;
+
 }

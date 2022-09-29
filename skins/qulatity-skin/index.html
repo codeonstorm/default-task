@@ -27,10 +27,13 @@
         width="640"
         height="264"
         poster="MY_VIDEO_POSTER.jpg"
-        style="overflow: hidden"
+        data-setup="{}"
       >      <!--poster="https://push-2501.5centscdn.com/startsplash.jpg"  -->
 
-        <source src="https://push-2501.5centscdn.com/TearsofSteel.mp4" type="video/mp4" />
+        <source src="https://push-2501.5centscdn.com/TearsofSteel.mp4" type="video/mp4" lablel="360p"/>
+        <!-- <source src="https://push-2501.5centscdn.com/TearsofSteel.mp4" type="video/mp4" lablel="240p"/>
+        <source src="https://push-2501.5centscdn.com/TearsofSteel.mp4" type="video/mp4" lablel="480p"/> -->
+
         <!-- <source src="MY_VIDEO.webm" type="video/webm" /> -->
         <p class="vjs-no-js">
           To view this video please enable JavaScript, and consider upgrading to a
@@ -42,23 +45,15 @@
 
 
       <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
-      <script src="../custom_plugin/custom_plugin.js"></script>
-      <script type="text/javascript">
+      <!-- videojs-contrib-quality-levels.min.js -->
+      <script src="file:///E:/5centsCDN%20DailyTask/video%20quality%20task/node_modules/videojs-contrib-quality-levels/dist/videojs-contrib-quality-levels.min.js"></script>
+      <!-- videojs-hls-quality-selector.min.js -->
+      <script src="file:///E:/5centsCDN%20DailyTask/video%20quality%20task/node_modules/videojs-hls-quality-selector/dist/videojs-hls-quality-selector.min.js"></script>
 
-      var player = videojs('my-video', {
+      <script>
+      var player = videojs('my-video');
 
-      });
-
-      //register custom custom_plugin
-      player.customButtonPlugin(player);
-
-      // player.on('timeupdate', function(){
-      //   console.log(document.querySelector('.vjs-current-time-display').innerHTML);
-      //     // alert(player.duration());
-      // });
-
-
+      player.hlsQualitySelector(player);
       </script>
-
     </body>
     </html>

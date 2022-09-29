@@ -34,14 +34,47 @@
 
 /* picture controler */
 .vjs-picture-in-picture-control{
-  left: 70%;
+  order: 10;
 }
 
-.vjs-fullscreen-control{
+/* fullscreen controler */
+ .video-js .vjs-fullscreen-control .vjs-icon-placeholder::before{
+    content: url('https://cp.5centscdn.net/player/5centscdn/skins/skin3/assets/fullscreen.svg') !important;
+    transform: scale(0.4);
+}
+
+.vjs-fullscreen-control {
+  order: 100;
+  position: fixed!important;
+  top: -26%;
+  right: 0;
+}
+
+/* play btn hide */
+.vjs-play-control{
   display: none!important;
 }
-
 /*******/
 .vjs-remaining-time{
   display: none;
+}
+
+
+
+.vjs-control-bar{
+  background-color: rgb(0 0 0)!important;
+}
+
+
+
+
+
+/* custom plugin */
+.vjs-custom-btn {
+  order: 100;
+}
+.vjs-custom-btn .vjs-icon-placeholder::before{
+  content: url('https://cp.5centscdn.net/player/5centscdn/skins/skin3/assets/settings.svg')!important;
+  transform: scale(0.3);
+  cursor: pointer;
 }

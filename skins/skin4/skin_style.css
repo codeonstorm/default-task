@@ -12,61 +12,62 @@
 /* control bar */
 .vjs-control-bar{
   background: #4fa83d!important;
-  align-items: center;
+
 }
 
+/* fullscreen controler*/
+.vjs-control-bar .vjs-fullscreen-control .vjs-icon-placeholder:before, .vjs-icon-fullscreen-enter:before {
+    content: url('https://cp.5centscdn.net/player/5centscdn/skins/skin4/assets/fullscreen.svg') !important;
+    transform: scale(0.5);
+}
+
+.vjs-fullscreen .vjs-fullscreen-control .vjs-icon-placeholder:before, .vjs-icon-fullscreen-exit:before {
+    content: url('https://cp.5centscdn.net/player/5centscdn/skins/skin4/assets/fullscreen-exit.svg') !important;
+    transform: scale(0.45);
+}
+
+
+
+
 /**** progress******/
- .vjs-progress-control{
+.vjs-progress-control{
   position: absolute!important;
   top: -20px!important;
   width: 100%!important;
+}
 
-  /* margin: 0 10px; */
+.vjs-progress-holder{
+  background-color: rgba(115, 133, 159, 0.6)!important;
 }
 
 
-/* .vjs-load-progress>div:first-child{
-  background: #fff!important;
-} */
 
 .vjs-progress-holder{
   height: 11px!important;
+  margin: 0!important;
 }
 
-.vjs-slider-bar{
-  display: none!important;
+.vjs-play-progress::before{
+  display: none;
 }
-
 
 /* vjs-play-control */
 .vjs-play-control{
-  background: #fff!important;
   border-radius: 50%!important;
-  width: 20px!important;
-  height: 20px!important;
-  left: 5px;
+ background: #fff!important;
+ width: 22px!important;
+ height: 22px!important;
+ margin: 4px!important;
 
 }
 
-.vjs-play-control>.vjs-icon-placeholder{
+.vjs-play-control>.vjs-icon-placeholder::before{
   color: #4fa83d!important;
-  position: absolute;
-    top: -5px;
-    left: 1px;
+  line-height: 1.38!important;
 }
 
-/* picture controler */
-.vjs-picture-in-picture-control{
-  left: 50%;
-}
 
-.vjs-fullscreen-control{
-  left: 55%;
-}
 
-.vjs-remaining-time{
-  left: 20%;
-}
 
 
 
@@ -76,9 +77,6 @@
   transition: width 0.1s!important;
 }
 
-.vjs-volume-level{
-  background: red!important;
-}
 
 .vjs-volume-horizontal{
   width: 5em!important;
@@ -92,7 +90,36 @@
 }
 
 /* custom volume */
-.vjs-icon-volume-high:before, .video-js .vjs-mute-control .vjs-icon-placeholder:before {
-  content: url('https://cp.5centscdn.net/player/5centscdn/skins/skin4/assets/volume-full.svg') !important;
- transform: scale(0.5);
+.vjs-control-bar .vjs-mute-control.vjs-vol-0 .vjs-icon-placeholder:before, .vjs-icon-volume-mute:before {
+    content: url('https://cp.5centscdn.net/player/5centscdn/skins/skin4/assets/volume-mute.svg') !important;
+    transform: scale(0.5);
+}
+
+.vjs-control-bar .vjs-mute-control.vjs-vol-1 .vjs-icon-placeholder:before, .vjs-icon-volume-mute:before {
+    content: url('https://cp.5centscdn.net/player/5centscdn/skins/skin4/assets/volume-no.svg') !important;
+    transform: scale(0.5);
+}
+
+.vjs-control-bar .vjs-mute-control.vjs-vol-2 .vjs-icon-placeholder:before, .vjs-icon-volume-mute:before {
+    content: url('https://cp.5centscdn.net/player/5centscdn/skins/skin4/assets/volume-half.svg') !important;
+    transform: scale(0.5);
+}
+
+.vjs-control-bar .vjs-mute-control.vjs-vol-3 .vjs-icon-placeholder:before, .vjs-icon-volume-mute:before {
+    content: url('https://cp.5centscdn.net/player/5centscdn/skins/skin4/assets/volume-full.svg') !important;
+    transform: scale(0.5);
+}
+
+
+
+.vjs-picture-in-picture-control{
+  order: 4;
+}
+.vjs-fullscreen-control{
+  order: 5;
+}
+
+.vjs-remaining-time{
+  order: 3;
+  flex:auto!important;
 }
